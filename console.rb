@@ -6,7 +6,7 @@ property1 = Property.new ({
   'value' => '240000',
   'number_of_bedrooms' => '2',
   'year_built' => '1983',
-  'status' => "to let",
+  'status' => 'to let',
   'sq_metres' => '60',
   'build_type' => 'flat'
   })
@@ -20,3 +20,8 @@ property2 = Property.new ({
   'sq_metres' => '68',
   'build_type' => 'flat'
   })
+
+property1.create
+property2.create
+properties = Property.read()
+p properties
